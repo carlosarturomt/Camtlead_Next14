@@ -4,10 +4,10 @@ import { useEffect, useState } from "react"
 //import useWindowSize from "@/hooks/useWindowSize"
 import ActiveLink from "@/components/molecules/links"
 import { Switcher } from "@/components/molecules/buttons"
-/* import { ICONS } from "@/assets/icons" */
 import useWindowSize from "@/hooks/useWindowSize"
 import { WindowSize } from "@/interfaces"
 import './navigationStyles.scss'
+import { ICONS } from "@/assets/icons"
 
 export default function Navigation() {
   const size: WindowSize = useWindowSize()
@@ -31,8 +31,7 @@ export default function Navigation() {
         <button onClick={() => setOpenNav((prev) => !prev)}>
           <span className='logo border-t-2 border-b-2 border-purple-300 dark:border-purple-550'
           >
-            {/* {ICONS.logo.camt} */}
-            i
+            {ICONS.logo.camt}
           </span>
         </button>
 

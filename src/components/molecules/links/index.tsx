@@ -4,7 +4,7 @@ import { usePathname, useRouter } from 'next/navigation';
 interface ActiveLinkProps {
   href: string
   active: string
-  inactive: string
+  inactive: string 
 }
 
 export default function ActiveLink({ href, active, inactive }: ActiveLinkProps) {
