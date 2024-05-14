@@ -1,11 +1,6 @@
 import Link from 'next/link'
-import { usePathname, useRouter } from 'next/navigation';
-
-interface ActiveLinkProps {
-  href: string
-  active: string
-  inactive: string 
-}
+import { usePathname, useRouter } from 'next/navigation'
+import { ActiveLinkProps } from '@/interfaces'
 
 export default function ActiveLink({ href, active, inactive }: ActiveLinkProps) {
   const router = useRouter()

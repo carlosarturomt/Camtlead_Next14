@@ -1,39 +1,7 @@
 "use client"
-import { useEffect, useState } from "react";
-import useDarkMode from "@/hooks/useDarkMode";
-
-interface SvgPathProps {
-  d: string
-  fill: string
-  points: string
-}
-interface SvgGroupReactProps {
-  fill: string
-  x: string
-  y: string
-  width: string
-  height: string
-  x2?: string
-  y2?: string
-  width2?: string
-  height2?: string
-  transform2?: string
-  x3?: string
-  y3?: string
-  width3?: string
-  height3?: string
-  transform3?: string
-  x4?: string
-  y4?: string
-  width4?: string
-  height4?: string
-  transform4?: string
-}
-interface SvgGroupPolylinePolygonProps {
-  fill: string
-  pointsPolyline: string
-  pointsPolygon: string
-}
+import { useEffect, useState } from "react"
+import useDarkMode from "@/hooks/useDarkMode"
+import { SvgGroupPolylinePolygonProps, SvgGroupReactProps, SvgPathProps } from "@/interfaces"
 
 export function Path({ d, fill }: SvgPathProps) {
   const [fillColor, setFillColor] = useState(fill)
@@ -56,7 +24,7 @@ export function GroupPolylinePath({ d, fill, points }: SvgPathProps) {
 
   useEffect(() => {
     if (colorTheme == 'light') {
-      setFillColor('#0d0319')
+      setFillColor('#8b1fff')
     }
   }, [colorTheme])
 
@@ -74,7 +42,7 @@ export function GroupPolylinePolygone({ pointsPolyline, pointsPolygon, fill }: S
 
   useEffect(() => {
     if (colorTheme == 'light') {
-      setFillColor('#0d0319')
+      setFillColor('#8b1fff')
     }
   }, [colorTheme])
 
@@ -92,7 +60,7 @@ export function GroupReact({ fill, x, x2, x3, x4, y, y2, y3, y4, width, width2, 
 
   useEffect(() => {
     if (colorTheme == 'light') {
-      setFillColor('#0d0319')
+      setFillColor('#8b1fff')
     }
   }, [colorTheme])
 
