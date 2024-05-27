@@ -1,14 +1,14 @@
 /**
  * This function return an Object with numbers and strings of a Date
  * @param {String} date string of a date
- * @returns Object: {day,weekday, month, year, weekdaysEs, monthEs, MonthEn, NewsMonthEs}
+ * @returns Object: {day,weekday, month, year, weekdayEs, monthEs, MonthEn, NewsMonthEs}
  */
-export default function GetDate(dateStr: string): {
+export default function GetDate(dateStr: Date): {
   day: number,
   weekday: number,
   month: number,
   year: number,
-  weekdaysEs: string,
+  weekdayEs: string,
   monthEs: string,
   monthEn: string,
   nextMonthEs: string,

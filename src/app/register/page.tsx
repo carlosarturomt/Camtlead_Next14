@@ -8,9 +8,9 @@ export default function Register() {
   const today = new Date()
   const date = GetDate(today)
 
-  const DateToday = (value) => {
+  const DateToday = (value: number): string => {
     if (value <= 9) return '0' + value
-    else return value
+    else return value.toString()
   }
 
   const date_today = date.year + '-' + DateToday(date.month + 1) + '-' + DateToday(date.day)
