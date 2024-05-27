@@ -20,7 +20,9 @@ export default function RootLayout({
     <html lang="es">
       <body className={`${inter.className}  transition-colors duration-1000 bg-purple-550 dark:bg-purple-1000 dark:text-purple-100`}>
         <Navigation />
-        {children}
+        <main className="flex-center py-4 px-2">
+          {children}
+        </main>
       </body>
     </html>
   )
